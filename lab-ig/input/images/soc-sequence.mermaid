@@ -1,0 +1,25 @@
+sequenceDiagram
+    autonumber
+    actor User
+    participant Web as Web Server
+    participant DB as Database
+
+    User->>Web: Request login page
+    activate Web
+    Web-->>User: Display login form
+    deactivate Web
+
+    User->>Web: Submit credentials (username/password)
+    activate Web
+    Web->>DB: Query user record
+    activate DB
+    DB-->>Web: Return user data
+    deactivate DB
+
+    alt Valid Credentials
+        Web-->>User: Login successful & redirect
+    else Invalid Credentials
+        Web-->>User: Show error message
+    end
+    deactivate Web
+

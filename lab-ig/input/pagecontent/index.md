@@ -1,6 +1,6 @@
-### Tittel
+### Utveksling av pasient og annet tjafs
 
-Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)
+Utveksling av data skal skje med dobble frustrasjonsopphengsforkoblinger
 
 ### Mål
 
@@ -32,4 +32,4 @@ Eksempel på en figur laget med PlantUML.
 
 <img src="test.svg" width="40%" />
 
-
+<img src="soc-sequence.svg" width="50%" />
