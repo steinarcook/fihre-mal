@@ -31,3 +31,31 @@ jobs:
         message: "Render PlantUML files"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    # The PlantUML action only handles .puml/.pu – render Mermaid files separately
+    - name: mermaid
+      env:
+        IMAGES_DIR: lab-ig/input/images
+      run: |
+        shopt -s nullglob
+        files=("$IMAGES_DIR"/*.mermaid "$IMAGES_DIR"/*.mmd)
+        if [ ${#files[@]} -eq 0 ]; then
+          echo "No Mermaid files found"
+          exit 0
+        fi
+        # Chrome cannot use its sandbox on the GitHub runner
+        echo '{"args":["--no-sandbox"]}' > "$RUNNER_TEMP/puppeteer.json"
+        for f in "${files[@]}"; do
+          echo "Rendering $f -> ${f%.*}.svg"
+          npx -y -p @mermaid-js/mermaid-cli@11 mmdc -p "$RUNNER_TEMP/puppeteer.json" -i "$f" -o "${f%.*}.svg"
+        done
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add "$IMAGES_DIR"/*.svg
+        if git diff --cached --quiet; then
+          echo "Mermaid SVGs unchanged"
+        else
+          git commit -m "Render Mermaid files"
+          # The PlantUML step may have pushed a commit in the meantime
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+        fi
