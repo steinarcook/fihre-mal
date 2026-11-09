@@ -7,7 +7,7 @@ id: hl7.fhir.no.mal
 canonical: http://hl7.no/fhir/ig/mal
 name: Mal
 title: "Lumina mal"
-description: Implementasjonsguide for å TODO
+description: Implementasjonsguide for å utveksle pasientinformasjon mellom helsepersonell og pasienter i Norge. Inneholder maler for dokumentasjon av pasientinformasjon.
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
