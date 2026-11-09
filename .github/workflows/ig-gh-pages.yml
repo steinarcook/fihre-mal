@@ -3,9 +3,13 @@ name: Gen IG and publish GH pages
 on:
   workflow_dispatch:
 
+# Needed to push the generated IG to the gh-pages branch
+permissions:
+  contents: write
+
 # The short name is used to identify the IG and the folder where the IG is located
 env:
-  IG_SHORTNAME: mal
+  IG_SHORTNAME: lab-ig
 
 # The following jobs are equal for all IGs and can be moved to a common composite-action if 'uses'-support is added, see:
 # https://github.com/actions/runner/blob/main/docs/adrs/1144-composite-actions.md
