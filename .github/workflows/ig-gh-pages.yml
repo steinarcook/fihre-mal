@@ -2,6 +2,18 @@ name: Gen IG and publish GH pages
 
 on:
   workflow_dispatch:
+  # Runs after PlantUML has rendered and committed images, so the build includes them.
+  # (Commits made with GITHUB_TOKEN never trigger 'push' workflows, hence workflow_run.)
+  # The path filter for which pushes lead to a build lives in plant-uml.yml.
+  workflow_run:
+    workflows: ["Generate PlantUML"]
+    types: [completed]
+    branches: [main]
+
+# Never run two builds at once; a newer build replaces a queued one
+concurrency:
+  group: ig-gh-pages
+  cancel-in-progress: false
 
 # Needed to push the generated IG to the gh-pages branch
 permissions:
@@ -16,6 +28,8 @@ env:
 # "Hardkodet" for no-basis 2.2.2
 jobs:
   publish:
+    # Skip if the PlantUML run failed
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     container: hl7fhir/ig-publisher-base:latest
     steps:
@@ -55,4 +69,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
           destination_dir: currentbuild
-          commit_message: "${{ env.IG }}: ${{ github.event.head_commit.message }}"
+          commit_message: "${{ env.IG_SHORTNAME }}: build of ${{ github.sha }} (${{ github.event_name }})"

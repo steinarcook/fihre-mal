@@ -3,6 +3,11 @@ on:
   push:
     branches:
       - main
+    # Also triggers "Gen IG and publish GH pages" via workflow_run when finished
+    paths:
+      - 'lab-ig/**'
+      - '.github/workflows/plant-uml.yml'
+      - '.github/workflows/ig-gh-pages.yml'
   workflow_dispatch:
 
 # Needed to commit rendered PlantUML images back to the repository
