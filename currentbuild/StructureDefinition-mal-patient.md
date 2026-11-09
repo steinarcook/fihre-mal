@@ -104,6 +104,12 @@ Other representations of profile: [CSV](StructureDefinition-mal-patient.csv), [E
       "id" : "Patient.name.family",
       "path" : "Patient.name.family",
       "mustSupport" : true
+    },
+    {
+      "id" : "Patient.telecom",
+      "path" : "Patient.telecom",
+      "min" : 1,
+      "max" : "2"
     }]
   }
 }

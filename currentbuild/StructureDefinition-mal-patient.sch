@@ -10,6 +10,13 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:Patient</sch:title>
+    <sch:rule context="f:Patient">
+      <sch:assert test="count(f:telecom) &gt;= 1">telecom: minimum cardinality of 'telecom' is 1</sch:assert>
+      <sch:assert test="count(f:telecom) &lt;= 2">telecom: maximum cardinality of 'telecom' is 2</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:Patient/f:extension</sch:title>
     <sch:rule context="f:Patient/f:extension">
       <sch:assert test="count(f:extension[@url = 'code']) &lt;= 1">extension with URL = 'code': maximum cardinality of 'extension' is 1</sch:assert>
