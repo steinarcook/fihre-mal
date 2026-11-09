@@ -9,6 +9,7 @@ Description: "Informasjon om pasienten, basert på no-basis."
 
 * identifier MS
 * name.family MS
+* telecom 1..2
 
 // Eksempel på norsk pasient med fødselsnummer og adresse
 
