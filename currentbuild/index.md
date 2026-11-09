@@ -10,9 +10,9 @@
 | *Official URL*:http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal | *Version*:0.1.0 |
 | Draft as of 2026-11-09 | *Computable Name*:Mal |
 
-### Tittel
+### Utveksling av pasient og annet tjafs
 
-Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)
+Utveksling av data skal skje med dobble frustrasjonsopphengsforkoblinger
 
 ### Mål
 
@@ -44,6 +44,8 @@ Eksempel på en figur laget med PlantUML.
 
 ![](test.svg)
 
+![](soc-sequence.svg)
+
 
 
 ## Resource Content
@@ -57,7 +59,7 @@ Eksempel på en figur laget med PlantUML.
   "name" : "Mal",
   "title" : "Lumina mal",
   "status" : "draft",
-  "date" : "2026-11-09T10:27:43+00:00",
+  "date" : "2026-11-09T11:07:38+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",
@@ -66,7 +68,7 @@ Eksempel på en figur laget med PlantUML.
       "value" : "https://www.hl7.no"
     }]
   }],
-  "description" : "Implementasjonsguide for å TODO",
+  "description" : "Implementasjonsguide for å utveksle pasientinformasjon mellom helsepersonell og pasienter i Norge. Inneholder maler for dokumentasjon av pasientinformasjon.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

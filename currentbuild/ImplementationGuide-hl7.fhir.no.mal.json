@@ -3,14 +3,14 @@
   "id" : "hl7.fhir.no.mal",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name=\"hl7.fhir.no.mal\"> </a><a name=\"hchl7.fhir.no.mal\"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å TODO</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name=\"hl7.fhir.no.mal\"> </a><a name=\"hchl7.fhir.no.mal\"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å utveksle pasientinformasjon mellom helsepersonell og pasienter i Norge. Inneholder maler for dokumentasjon av pasientinformasjon.</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
   "version" : "0.1.0",
   "name" : "Mal",
   "title" : "Lumina mal",
   "status" : "draft",
-  "date" : "2026-11-09T10:27:43+00:00",
+  "date" : "2026-11-09T11:07:38+00:00",
   "publisher" : "HL7 Norge",
   "contact" : [{
     "name" : "HL7 Norge",
@@ -19,7 +19,7 @@
       "value" : "https://www.hl7.no"
     }]
   }],
-  "description" : "Implementasjonsguide for å TODO",
+  "description" : "Implementasjonsguide for å utveksle pasientinformasjon mellom helsepersonell og pasienter i Norge. Inneholder maler for dokumentasjon av pasientinformasjon.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",

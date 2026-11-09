@@ -3,7 +3,7 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="hl7.fhir.no.mal"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name="hl7.fhir.no.mal"> </a><a name="hchl7.fhir.no.mal"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å TODO</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name="hl7.fhir.no.mal"> </a><a name="hchl7.fhir.no.mal"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å utveksle pasientinformasjon mellom helsepersonell og pasienter i Norge. Inneholder maler for dokumentasjon av pasientinformasjon.</p>
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal"/>
@@ -11,7 +11,7 @@
   <name value="Mal"/>
   <title value="Lumina mal"/>
   <status value="draft"/>
-  <date value="2026-11-09T10:27:43+00:00"/>
+  <date value="2026-11-09T11:07:38+00:00"/>
   <publisher value="HL7 Norge"/>
   <contact>
     <name value="HL7 Norge"/>
@@ -20,7 +20,7 @@
       <value value="https://www.hl7.no"/>
     </telecom>
   </contact>
-  <description value="Implementasjonsguide for å TODO"/>
+  <description value="Implementasjonsguide for å utveksle pasientinformasjon mellom helsepersonell og pasienter i Norge. Inneholder maler for dokumentasjon av pasientinformasjon."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
