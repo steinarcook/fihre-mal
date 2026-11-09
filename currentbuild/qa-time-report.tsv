@@ -1,8 +1,8 @@
 Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.mal.json	2359	-	0	1	0	0	0	0	6	44	0	0	0	0	0	0	0	1	0	0	27	29	0	0	0	1	0	1
-fsh-generated/resources/Patient-Pasient-1.json	1150	3	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	11	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-mal-observation-blodprove.json	2243	1	0	43	0	0	0	0	1	103	0	0	0	0	0	0	0	1	0	0	60	650	0	0	0	7	0	2
-fsh-generated/resources/StructureDefinition-mal-patient.json	931	1	0	54	0	0	0	0	0	28	0	0	0	0	0	0	0	2	0	0	56	649	0	0	0	12	0	2
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.mal.json	2359	-	0	0	0	0	0	0	8	35	0	0	0	0	0	0	0	0	0	0	25	29	0	0	0	0	0	1
+fsh-generated/resources/Patient-Pasient-1.json	1150	3	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	3	10	0	0	1	0	0	0
+fsh-generated/resources/StructureDefinition-mal-observation-blodprove.json	2243	2	0	38	0	0	0	0	0	53	0	0	1	0	0	0	0	2	0	0	40	650	0	0	0	6	0	2
+fsh-generated/resources/StructureDefinition-mal-patient.json	931	1	0	45	0	0	0	0	0	28	0	0	0	0	0	0	0	1	0	0	39	465	0	0	0	6	0	1
 /fsh-generated/includes/fsh-link-references.md	160	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
 /fsh-generated/includes/menu.xml	1089	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/pagecontent/index.md	1106	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
@@ -11,5 +11,6 @@ fsh-generated/resources/StructureDefinition-mal-patient.json	931	1	0	54	0	0	0	0	
 /input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/images/soc-sequence.mermaid	563	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
 /input/images/test.puml	389	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/images/test.svg	8294	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/temp/pages/_includes/artifacts.xml	2505	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0
+/input/images/soc-sequence.svg	28626	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/test.svg	8294	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	2505	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1	0	0	0	0	0	0
